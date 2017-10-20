@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width,initial-scale=2,maximum-scale=1,user-scalable=no">
+    <link type="text/css" rel="stylesheet" href="Content/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="Content/css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="Content/css/swiper.min.css">
+    <link type="text/css" rel="stylesheet" href="Content/css/reset.css">
+    <link type="text/css" rel="stylesheet" href="Content/css/common.css">
+    <link type="text/css" rel="stylesheet" href="Content/css/style.css">
+</head>
+<body ng-controller="main">
+<header class="header">
+    <ul ng-init='selected=0'>
+        <li ng-class='{on:selected==$index}' ng-click='show($index)' ng-repeat='item in vm'>{{item.list}}</li>
+    </ul>
+    <i class="fa fa-search left"></i>
+</header>
+<section class="section">
+    <div class="banner">
+        <div class="ban swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="Content/images/car.jpg" alt=""/>
+                </div>
+                <div class="swiper-slide">
+                    <img src="Content/images/timg-1.jpg" alt=""/>
+                </div>
+                <div class="swiper-slide">
+                    <img src="Content/images/timg-2.jpeg" alt=""/>
+                </div>
+                <div class="swiper-slide">
+                    <img src="Content/images/timg-3.jpg" alt=""/>
+                </div>
+            </div>
+            <div class="swiper-pagination">
+                <span></span><span></span><span></span><span></span>
+            </div>
+        </div>
+    </div>
+    <ul class="nav-icon">
+        <li>
+            <dl>
+                <dt style="background: #ff6666;"><i class="fa fa-shopping-bag"></i></dt>
+                <dd>车商城</dd>
+            </dl>
+        </li>
+        <li>
+            <dl>
+                <dt style="background: #ff9d3e;"><i class="fa fa-briefcase"></i></dt>
+                <dd>分期购车</dd>
+            </dl>
+        </li>
+        <li>
+            <dl>
+                <dt style="background: #ff6666;"><i class="fa fa-sign-in"></i></dt>
+                <dd>团购活动</dd>
+            </dl>
+        </li>
+        <li>
+            <dl>
+                <dt style="background: #4183ff;"><i class="fa fa-car"></i></dt>
+                <dd>找二手车</dd>
+            </dl>
+        </li>
+    </ul>
+    <div class="img"><img src="Content/images/yuyue.jpg"></div>
+    <div class="main">
+        <h3>车主服务</h3>
+        <ul>
+            <li class="col-xs-3" style="color: #f85858;">
+                <i class="fa fa-mobile-phone"></i>
+                <span>油卡充值</span>
+            </li>
+            <li class="col-xs-3" style="color: #0aa570;">
+                <i class="fa fa-shield"></i>
+                <span>低价保险</span>
+            </li>
+            <li class="col-xs-3" style="color: #7760ef;">
+                <i class="fa fa-bomb"></i>
+                <span>4S店保养</span>
+            </li>
+            <li class="col-xs-3" style="color: #25af80;">
+                <i class="fa fa-shopping-cart"></i>
+                <span>品质轮胎</span>
+            </li>
+            <li class="col-xs-3" style="color: #ff4e00;">
+                <i class="fa fa-shopping-basket"></i>
+                <span>车品商城</span>
+            </li>
+            <li class="col-xs-3" style="color: #5691ff;">
+                <i class="fa fa-venus-double"></i>
+                <span>洗车</span>
+            </li>
+            <li class="col-xs-3" style="color: #ff550a;">
+                <i class="fa fa-pencil-square"></i>
+                <span>违章代缴</span>
+            </li>
+            <li class="col-xs-3" style="color: #e94645;">
+                <i class="fa fa-transgender"></i>
+                <span>免费测评</span>
+            </li>
+            <li class="col-xs-3" style="color: #95b9ff;">
+                <i class="fa fa-map-marker"></i>
+                <span>查周边</span>
+            </li>
+            <li class="col-xs-3" style="color: #0aa570;">
+                <i class="fa fa-wheelchair-alt"></i>
+                <span>车主卡</span>
+            </li>
+            <li class="col-xs-3" style="color: #4183ff;">
+                <i class="fa fa-gamepad"></i>
+                <span>领劵保养</span>
+            </li>
+            <li class="col-xs-3" style="color: #5f5f5f;">
+                <i class="fa fa-th-large"></i>
+                <span>全部</span>
+        </ul>
+    </div>
+    <div class="time-limit mt10">
+        <h3>
+            <span>限时抢购</span>
+            <span><b>13</b>:<b>13</b>:<b>13</b></span>
+        </h3>
+        <div class="ul">
+            <ul>
+                <li>
+                    <dl>
+                        <dt><img src="Content/images/time-one.jpg"></dt>
+                        <dd>
+                            <h4>补胎工具简易套装</h4>
+                            <p><span>￥9.9元</span><b>28元</b></p>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt><img src="Content/images/time-one.jpg"></dt>
+                        <dd>
+                            <h4>补胎工具简易套装</h4>
+                            <p><span>￥9.9元</span><b>28元</b></p>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt><img src="Content/images/time-one.jpg"></dt>
+                        <dd>
+                            <h4>补胎工具简易套装</h4>
+                            <p><span>￥9.9元</span><b>28元</b></p>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt><img src="Content/images/time-one.jpg"></dt>
+                        <dd>
+                            <h4>补胎工具简易套装</h4>
+                            <p><span>￥9.9元</span><b>28元</b></p>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt><img src="Content/images/time-one.jpg"></dt>
+                        <dd>
+                            <h4>补胎工具简易套装</h4>
+                            <p><span>￥9.9元</span><b>28元</b></p>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt><img src="Content/images/time-one.jpg"></dt>
+                        <dd>
+                            <h4>补胎工具简易套装</h4>
+                            <p><span>￥9.9元</span><b>28元</b></p>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt><img src="Content/images/time-one.jpg"></dt>
+                        <dd>
+                            <h4>补胎工具简易套装</h4>
+                            <p><span>￥9.9元</span><b>28元</b></p>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt><img src="Content/images/time-one.jpg"></dt>
+                        <dd>
+                            <h4>补胎工具简易套装</h4>
+                            <p><span>￥9.9元</span><b>28元</b></p>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt><img src="Content/images/time-one.jpg"></dt>
+                        <dd>
+                            <h4>补胎工具简易套装</h4>
+                            <p><span>￥9.9元</span><b>28元</b></p>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt><img src="Content/images/time-one.jpg"></dt>
+                        <dd>
+                            <h4>补胎工具简易套装</h4>
+                            <p><span>￥9.9元</span><b>28元</b></p>
+                        </dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="activity mt10">
+        <h2><span>活动专区</span><span>更多活动 <i class="fa fa-angle-right ml10"></i></span></h2>
+        <ul>
+            <li>
+                <dl>
+                    <dt>
+                        <span>测身价炫富</span>
+                        <span>身价大PK</span>
+                    </dt>
+                    <dd><img src="Content/images/activity_one.jpg"></dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt>
+                        <span>全场0利率</span>
+                        <span>购买无压力</span>
+                    </dt>
+                    <dd><img src="Content/images/activity_two.jpg"></dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt>
+                        <span>好车分期</span>
+                        <span>定制专属方案</span>
+                    </dt>
+                    <dd><img src="Content/images/activity_three.jpg"></dd>
+                </dl>
+            </li>
+        </ul>
+    </div>
+    <tab data="data"></tab>
+</section>
+<footer class="footer">
+    <ul class="footer-nav">
+        <li>
+            <a href="javascript:;">
+                <i class="fa fa-briefcase"></i><span>职位</span>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;">
+                <i class="fa fa-home"></i><span>沟通</span>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;">
+                <i class="fa fa-first-order"></i><span>动态</span>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;">
+                <i class="fa fa-align-left"></i><span>简历</span>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;">
+                <i class="fa fa-user-circle"></i><span>我的</span>
+            </a>
+        </li>
+    </ul>
+</footer>
+</body>
+<script type="text/javascript" src="Content/js/angular/angular.min.js"></script>
+<script type="text/javascript" src="App/Controller/headTab.js"></script>
+<script type="text/javascript" src="Content/js/jquery/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="Content/js/jquery/iscroll.js"></script>
+<script type="text/javascript" src="Content/js/jquery/swiper-3.3.1.min.js"></script>
+<script type="text/javascript">
+    var ban = new Swiper(".ban", {
+        pagination: ".swiper-pagination",
+        autoplay: 2000,
+        loop: true
+    })
+    /*$(".ul ul li").width($(".ul").width() / 5)
+    var wid = $(".ul ul li").width(),
+            len = $(".ul ul li").length;
+    $(".ul ul").width(wid * len)
+
+    var arr = ["热销", "爆款", "热销", "爆款", "热销", "爆款", "热销", "爆款", "热销", "爆款"];
+    $.each(arr, function (i, n) {
+        $(".ul ul b").eq(i).html(n);
+    })*/
+    var iscroll = new IScroll(".ul", {
+        mouseWheel: true,
+        scrollX: true
+    })
+</script>
+</html>

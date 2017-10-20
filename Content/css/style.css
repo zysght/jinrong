@@ -1,0 +1,256 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+body{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-size: 12px;
+    position: absolute;
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+}
+.header{height: 45px;position: relative;}
+.header ul{display: -webkit-flex;justify-content: center;}
+.header ul li{
+    width: auto;
+    height: 45px;
+    color: #9d9d9d;
+    padding: 0 5px;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 45px;
+}
+.header ul li:nth-child(1){margin-right: 15px;}
+.header ul li:nth-child(2){margin-left: 15px;}
+.on{color: #474747;border-bottom: 2px solid #474747}
+.left{top: 10px;right: 20px;font-size: 20px;position: absolute;}
+.section{-webkit-flex: 1;overflow-y: scroll;background: #ededed}
+.section .banner{height: 140px;}
+.section .banner img{width: 100%;height: 140px;}
+.section .nav-icon{
+    height: 100px;
+    padding: 0 10px;
+    background: white;
+    display: -webkit-flex;
+}
+.section .nav-icon li{-webkit-flex: 1;}
+.section .nav-icon li dl dt{
+    width: 40px;
+    height: 40px;
+    margin: 15px auto;
+    border-radius: 17px;
+    background: #ff6666;
+    text-align: center;
+    line-height: 40px;
+}
+.section .nav-icon li dl dt i{color: white;font-size: 20px;}
+.section .nav-icon li dl dd{text-align: center;}
+.section .img img{width: 100%;height: 70px;}
+.section .main {height: 230px;background: #fff;}
+.section .main h3{
+    height: 40px;
+    line-height: 40px;
+    padding-left: 20px;
+    font-size: 14px;
+}
+.section .main ul li{
+    padding-bottom: 6px;
+    text-align: center;
+    background: white;
+    border-bottom: 1px solid #ededed;
+}
+.section .main ul li:nth-child(odd){border-right: 1px solid #ededed;}
+.section .main ul li span {color: #474747;padding-top: 5px;display: block;}
+.section .main ul li i {font-size: 24px;padding-top: 10px;}
+.section .time-limit{width: 100%;background: white;}
+.section .time-limit h3{
+    height: 40px;
+    padding: 0 10px;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.section .time-limit h3 span:nth-child(1){
+    color: #474747;
+    font-size: 14px;
+}
+.section .time-limit h3 span:nth-child(2) b{
+    color: white;
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 20px;
+    display: inline-block;
+    background: #555;
+}
+/*
+.section .time-limit ul li dl .sanjiao{
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    position: absolute;
+    border: 10px solid #6cbc43;
+    transform:rotate(-45deg);
+    -webkit-transform:rotate(-45deg);
+    -o-transform:rotate(7deg);
+    border-color: transparent transparent #6cbc43 transparent;
+}
+*/
+.section .time-limit .ul {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    background: #ffffff;
+    position: relative; }
+.section .time-limit .ul ul {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 150px;
+}
+.section .time-limit .ul ul li {
+    width: 140px;
+    height: 100%;
+    float: left;
+    margin-left: 10px;
+}
+.section .time-limit .ul ul li dl{
+    width: 100%;
+    height: 130px;
+    border: 1px solid #ccc;
+}
+.section .time-limit .ul ul li dt{text-align: center;margin-top: 10px;}
+.section .time-limit .ul ul li dl dt img{
+    width: 70%;
+    height: 60px;
+}
+.section .time-limit .ul ul li dl dd h4{
+    padding: 10px 0;
+    text-align: center;
+    color: #757575;
+    font-size: 14px;
+}
+.section .time-limit .ul ul li dl dd p{padding-left: 10px;}
+.section .time-limit .ul ul li dl dd p span{color: #fc7f41;margin-right: 10px;}
+.section .time-limit .ul ul li dl dd p b{font-weight: normal;color: #9d9d9d;font-size: 12px;text-decoration: line-through}
+.section .activity{background: white;}
+.section .activity h2{
+    height: 40px;
+    padding: 0 10px;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.section .activity h2 span{font-size: 14px;}
+.section .activity h2 span:nth-child(1){color: #474747;}
+.section .activity h2 span:nth-child(2){color: #9d9d9d;}
+.section .activity ul{display: -webkit-flex;border-top: 1px solid #ededed;}
+.section .activity ul li{
+    height: 130px;
+    -webkit-flex: 1;
+    border-right: 1px solid #ededed;
+}
+.section .activity ul li:last-child{
+    border-right: none;
+}
+.section .activity ul li span{display: block;padding-left: 20px;}
+.section .activity ul li dl{
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+}
+.section .activity ul li dl dt span:nth-child(1){
+    color: #474747;
+    font-size: 14px;
+    padding-top: 10px;
+}
+.section .activity ul li dl dt span:nth-child(2){
+    color: #fb5401;
+    font-size: 12px;
+}
+.section .activity ul li dl dd{margin: 0 auto;padding-top: 10px;}
+.section .activity ul li dl dd img{width: 60px;height: 60px;}
+.section .content{
+    margin-top: 10px;
+    background: white;
+    text-align: center;
+    padding: 0 10px;
+}
+.section .content h2{
+    color: #474747;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.section .content h2 span:nth-child(2){
+    color: #b6b6b6;
+}
+.section .content h2 i{
+    color: #b6b6b6;
+    font-size: 20px;
+}
+.section .content dl{
+    height: 230px;
+    text-align: start;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.section .content dl dt{
+    padding: 20px 0;
+    text-align: center;
+}
+.section .content dl dt img {
+    width: 100px;
+    height: 60px;
+}
+.section .content dl dd h3{
+    height: 30px;
+    line-height: 30px;
+    color: #474747;
+    font-size: 16px;
+}
+.section .content dl dd h4{
+    height: 50px;
+    line-height: 20px;
+    color: #a3a3a3;
+    font-size: 14px;
+}
+.section .content dl dd p span{
+    color: #fc7f41;
+    font-size: 14px;
+    margin-right: 10px;
+}
+.section .content dl dd p b{
+    color: #a3a3a3;
+    font-size: 12px;
+    font-weight: normal;
+    text-decoration: line-through;
+}
+.footer{
+    height: 45px;
+    background: #fbfbfb;
+}
+.footer .footer-nav{
+    text-align: center;
+    display: -webkit-flex;
+}
+.footer .footer-nav li{
+    -webkit-flex: 1;
+    padding-top: 5px;
+    padding-bottom: 2px;
+}
+.footer .footer-nav li i{
+    color: #999;
+    font-size: 22px;
+}
+.footer .footer-nav li span{
+    display: block;
+}
